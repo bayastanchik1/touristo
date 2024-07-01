@@ -1,0 +1,85 @@
+#filtertur {
+	background-color: #f8f9fa; /* Светло-серый фон */
+	padding: 20px;
+	border-radius: 20px; /* Закругленные углы */
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Тень */
+	margin-bottom: 20px;
+	width: 800px; /* Фиксированная ширина */
+	margin: 0 auto; /* Центрирование по горизонтали */
+}
+
+.filter-container {
+	max-width: 700px;
+	margin: 0 auto;
+}
+
+h1 {
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+
+.filter-object {
+	display: flex;
+	flex-direction: column;
+}
+
+.filter-section {
+	display: flex;
+	align-items: center;
+	margin-bottom: 15px; /* Немного больше отступ между секциями */
+}
+
+label {
+	margin-right: 10px;
+	font-weight: bold;
+	color: #555; /* Цвет текста меток */
+}
+
+select {
+	flex: 1;
+	padding: 10px; /* Увеличенный внутренний отступ */
+	font-size: 16px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	background-color: #f0f0f0; /* Светло-серый фон */
+	transition: border-color 0.3s ease; /* Плавный переход при фокусе */
+}
+
+select:focus {
+	outline: none;
+	border-color: #fca32d; /* Цвет рамки при фокусе */
+	box-shadow: 0 0 0 0.2rem rgba(252, 163, 45, 0.25); /* Тень при фокусе */
+}
+
+.checkbox {
+	display: flex;
+	align-items: center;
+}
+
+.checkbox input {
+	margin-right: 8px;
+}
+
+button {
+	padding: 10px 20px;
+	font-size: 16px;
+	width: 240px;
+	background: #24b7e2; 
+	color: #fff; 
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: background-color 0.3s ease; 
+}
+
+button:hover {
+	background: #fd7b09; 
+}
+
+.search-result {
+	margin-top: 20px;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	background-color: #fff;
+}
