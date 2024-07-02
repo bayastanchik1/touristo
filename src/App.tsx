@@ -1,13 +1,12 @@
-import React from 'react';
-import './App.css';
-import Filtertur from './components/FilterTura/Filtertura'
+import './App.css'
+import Avtoregist from './components/Register/Avtoregist'
 
 function App() {
-  return (
-    <div className="App">
-      <Filtertur/>
-    </div>
-  );
+	return (
+		<div className='App'>
+			<Avtoregist />
+		</div>
+	)
 }
 
-export default App;
+export default App

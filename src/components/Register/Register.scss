@@ -1,0 +1,159 @@
+#register {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background: #f0f2f5;
+
+	.container {
+		background: #fff;
+		padding: 40px;
+		border-radius: 10px;
+		box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+		width: 400px;
+
+		.register {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+
+			.register_welcome {
+				text-align: center;
+				margin-bottom: 20px;
+
+				h1 {
+					font-size: 2.5em;
+					margin-bottom: 10px;
+					color: #333;
+				}
+
+				h5 {
+					color: #666;
+				}
+			}
+
+			.register_user {
+				width: 100%;
+
+				.input-container {
+					display: flex;
+					align-items: center;
+					margin-bottom: 20px;
+					position: relative;
+
+					.icon {
+						position: absolute;
+						left: 10px;
+						color: #888;
+						font-size: 1.2em;
+					}
+
+					input {
+						width: 100%;
+						padding: 12px 12px 12px 40px;
+						border: 1px solid #ccc;
+						border-radius: 5px;
+						outline: none;
+						font-size: 1em;
+						transition: border-color 0.3s;
+
+						&:focus {
+							border-color: #007bff;
+						}
+					}
+				}
+
+				.create_regist {
+					display: flex;
+					justify-content: center;
+					margin-bottom: 20px;
+
+					button {
+						width: 100%; /* Широкая кнопка */
+						padding: 10px; /* Большие отступы */
+						background-color: #007bff;
+						color: #fff;
+						border: none;
+						border-radius: 5px;
+						cursor: pointer;
+						font-size: 1.2em; /* Более крупный текст */
+						font-weight: bold; /* Жирный текст */
+						transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+
+						&:hover {
+							background-color: #0056b3;
+							transform: translateY(-2px);
+							box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+						}
+
+						&:active {
+							background-color: #004494;
+							transform: translateY(0);
+							box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+						}
+					}
+				}
+
+				.register_login {
+					text-align: center;
+
+					h4 {
+						margin-bottom: 15px;
+						color: #666;
+					}
+
+					.login-buttons {
+						display: flex;
+						flex-direction: column;
+						gap: 15px;
+
+						button {
+							display: flex;
+							align-items: center;
+							justify-content: center;
+							padding: 12px;
+							border: 1.2px solid black; /* Черная граница */
+							border-radius: 5px;
+							cursor: pointer;
+							font-size: 1em;
+							transition: background-color 0.3s, transform 0.3s;
+							color: #000; /* Черный текст */
+							background-color: #fff; /* Белый фон */
+
+							.icon {
+								margin-right: 10px;
+								font-size: 1.2em;
+								color: inherit; /* Наследуем цвет текста */
+							}
+
+							&:hover {
+								transform: translateY(-2px);
+								background-color: #f0f0f0;
+							}
+						}
+
+						.google {
+							border-color: #db4437;
+							color: #db4437;
+
+							&:hover {
+								border-color: #c33d2e;
+								color: #c33d2e;
+							}
+						}
+
+						.facebook {
+							border-color: #3b5998;
+							color: #3b5998;
+
+							&:hover {
+								border-color: #334d84;
+								color: #334d84;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
